@@ -1,0 +1,28 @@
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+      - env:        
+         - name: rhoarRaffleCreateEntryUrl
+           valueFrom:
+             configMapKeyRef:
+               key: rhoarRaffleCreateEntryUrl
+               name: rhoar-swarm-gateway-jwt-cm
+         - name: rhoarRaffleWinnerUrl
+           valueFrom:
+             configMapKeyRef:
+               key: rhoarRaffleWinnerUrl
+               name: rhoar-swarm-gateway-jwt-cm       
+         - name: KEYCLOAK_AUTH_SERVER_URL
+           valueFrom:
+             configMapKeyRef:
+               key: KEYCLOAK_AUTH_SERVER_URL
+               name: rhoar-swarm-gateway-jwt-cm                                   
+        resources:
+          limits:
+            cpu: 1
+            memory: 1Gi
+          requests:
+            cpu: 200m
+            memory: 512Mi
