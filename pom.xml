@@ -22,7 +22,7 @@
 		<version.fabric8.plugin>3.5.38</version.fabric8.plugin>
 		<fabric8.generator.fromMode>istag</fabric8.generator.fromMode>
 		<fabric8.generator.from>redhat-openjdk18-openshift:1.4</fabric8.generator.from>
-		<version.resteasy>3.0.24.Final</version.resteasy>
+		<version.resteasy>4.5.6.Final-redhat-00004</version.resteasy>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<version.microprofile>1.2</version.microprofile>
